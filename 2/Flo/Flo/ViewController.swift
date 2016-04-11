@@ -39,7 +39,7 @@ class ViewController: UIViewController {
     
     
     @IBAction func counterViewTap(gesture:UITapGestureRecognizer?) {
-        if (isGraphViewShowing) {
+        if (!isGraphViewShowing) {
             //hide Graph
             UIView.transitionFromView(graphView,
                 toView: counterView,
