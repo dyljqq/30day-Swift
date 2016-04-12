@@ -14,6 +14,9 @@ class ViewController: UIViewController {
     @IBOutlet weak var counterLabel: UILabel!
     @IBOutlet weak var containerView: UIView!
     @IBOutlet weak var graphView: GraphView!
+    @IBOutlet weak var averageWaterLabel: UILabel!
+    @IBOutlet weak var maxLabel: UILabel!
+    @IBOutlet weak var medalView: MedalView!
     
     var isGraphViewShowing = false
     
@@ -35,11 +38,12 @@ class ViewController: UIViewController {
         if isGraphViewShowing{
             counterViewTap(nil)
         }
+        checkTotal()
     }
     
     
     @IBAction func counterViewTap(gesture:UITapGestureRecognizer?) {
-        if (!isGraphViewShowing) {
+        if (isGraphViewShowing) {
             //hide Graph
             UIView.transitionFromView(graphView,
                 toView: counterView,
@@ -49,6 +53,7 @@ class ViewController: UIViewController {
         } else {
             
             //show Graph
+            self.setupGraphDisplay()
             UIView.transitionFromView(counterView,
                 toView: graphView,
                 duration: 1.0,
@@ -56,6 +61,44 @@ class ViewController: UIViewController {
                 completion: nil)
         }
         isGraphViewShowing = !isGraphViewShowing
+    }
+    
+    func setupGraphDisplay(){
+        let noOfDay: Int = 7
+        graphView.graphPoints[graphView.graphPoints.count - 1] = counterView.counter
+        graphView.setNeedsDisplay()
+        maxLabel.text = "\(graphView.graphPoints.maxElement())"
+        let average = graphView.graphPoints.reduce(0, combine: +) / graphView.graphPoints.count
+        averageWaterLabel.text = "\(average)"
+        
+        let dateFormatter = NSDateFormatter()
+        let calendar = NSCalendar.currentCalendar()
+        let componentOptions: NSCalendarUnit = NSCalendarUnit.Weekday
+        let components = calendar.component(componentOptions, fromDate: NSDate())
+        var weekday = components
+        
+        let days = ["S", "S", "M", "T", "W", "T", "F"]
+        
+        //5 - set up the day name labels with correct day
+        for i in (1 ... days.count).reverse() {
+            if let labelView = graphView.viewWithTag(i) as? UILabel {
+                if weekday == 7 {
+                    weekday = 0
+                }
+                labelView.text = days[weekday--]
+                if weekday < 0 {
+                    weekday = days.count - 1
+                }
+            }
+        }
+    }
+    
+    func checkTotal() {
+        if counterView.counter >= 8 {
+            medalView.showMedal(true)
+        } else {
+            medalView.showMedal(false)
+        }
     }
 
     override func didReceiveMemoryWarning() {

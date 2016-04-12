@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		730FB5451CBCE04D00C0FBFE /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 730FB5441CBCE04D00C0FBFE /* BackgroundView.swift */; };
+		730FB5471CBCF29800C0FBFE /* MedalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 730FB5461CBCF29800C0FBFE /* MedalView.swift */; };
 		73BB77B21CB7877E00F998BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BB77B11CB7877E00F998BE /* AppDelegate.swift */; };
 		73BB77B41CB7877E00F998BE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BB77B31CB7877E00F998BE /* ViewController.swift */; };
 		73BB77B71CB7877E00F998BE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73BB77B51CB7877E00F998BE /* Main.storyboard */; };
@@ -18,6 +20,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		730FB5441CBCE04D00C0FBFE /* BackgroundView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackgroundView.swift; sourceTree = "<group>"; };
+		730FB5461CBCF29800C0FBFE /* MedalView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MedalView.swift; sourceTree = "<group>"; };
 		73BB77AE1CB7877E00F998BE /* Flo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		73BB77B11CB7877E00F998BE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		73BB77B31CB7877E00F998BE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -65,7 +69,9 @@
 				73BB77C51CB7880A00F998BE /* PushButtonView.swift */,
 				73BB77C71CB7991200F998BE /* CounterView.swift */,
 				73BB77C91CB7AC5A00F998BE /* GraphView.swift */,
+				730FB5441CBCE04D00C0FBFE /* BackgroundView.swift */,
 				73BB77B51CB7877E00F998BE /* Main.storyboard */,
+				730FB5461CBCF29800C0FBFE /* MedalView.swift */,
 				73BB77B81CB7877E00F998BE /* Assets.xcassets */,
 				73BB77BA1CB7877E00F998BE /* LaunchScreen.storyboard */,
 				73BB77BD1CB7877E00F998BE /* Info.plist */,
@@ -144,7 +150,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				730FB5451CBCE04D00C0FBFE /* BackgroundView.swift in Sources */,
 				73BB77CA1CB7AC5A00F998BE /* GraphView.swift in Sources */,
+				730FB5471CBCF29800C0FBFE /* MedalView.swift in Sources */,
 				73BB77B41CB7877E00F998BE /* ViewController.swift in Sources */,
 				73BB77C61CB7880A00F998BE /* PushButtonView.swift in Sources */,
 				73BB77B21CB7877E00F998BE /* AppDelegate.swift in Sources */,
@@ -296,6 +304,7 @@
 				73BB77C21CB7877E00F998BE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
