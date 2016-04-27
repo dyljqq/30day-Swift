@@ -6,3 +6,4 @@
 4. [iOS Animation Tutorial: Custom View Controller Presentation Transitions](https://www.raywenderlich.com/113845/ios-animation-tutorial-custom-view-controller-presentation-transitions)
 5. StopWatch是模仿另一个30天学习swift的第一天的项目，但是根据自己的情况做了一些修改
 6. Custom Font(注：字体导入时时通过plist文件)
+7. PlayLocalVedio(修改了原作者的UItableViewCell的button点击，封装性更强)

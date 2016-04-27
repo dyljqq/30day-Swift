@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1509" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Q5i-Hh-GP4">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Watch Later-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PlayLocalVedio" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="220" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="trq-ru-Otf">
+                                <rect key="frame" x="-4" y="0.0" width="383" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="VideoCell" rowHeight="220" id="Fey-oN-2r7" customClass="VideoCell" customModule="PlayLocalVedio" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="92" width="383" height="220"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Fey-oN-2r7" id="Nab-vr-KYs">
+                                            <rect key="frame" x="0.0" y="0.0" width="383" height="219.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="videoScreenshot01" translatesAutoresizingMaskIntoConstraints="NO" id="Azm-qi-uJC" userLabel="Vedio Screenshot">
+                                                    <rect key="frame" x="0.0" y="0.0" width="383" height="220"/>
+                                                </imageView>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iQA-wS-syd">
+                                                    <rect key="frame" x="87" y="60" width="209" height="100"/>
+                                                    <state key="normal" image="playBtn"/>
+                                                    <connections>
+                                                        <action selector="playVideoButtonDidTouch:" destination="Fey-oN-2r7" eventType="touchUpInside" id="VRv-av-4nd"/>
+                                                    </connections>
+                                                </button>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m5Q-Sq-AR4" userLabel="Vedio Source Label">
+                                                    <rect key="frame" x="155" y="197" width="73" height="14"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="14" id="8Ax-qi-HDc"/>
+                                                        <constraint firstAttribute="width" constant="73" id="P3s-Vw-BVJ"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ya4-3x-ciM" userLabel="Vedio Title Label">
+                                                    <rect key="frame" x="132" y="173" width="119" height="20"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="119" id="QRS-SM-oih"/>
+                                                        <constraint firstAttribute="height" constant="20" id="dvp-ZT-yT2"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <variation key="default">
+                                                        <mask key="constraints">
+                                                            <exclude reference="dvp-ZT-yT2"/>
+                                                        </mask>
+                                                    </variation>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Ya4-3x-ciM" firstAttribute="centerX" secondItem="iQA-wS-syd" secondAttribute="centerX" id="1TH-W3-FrQ"/>
+                                                <constraint firstItem="iQA-wS-syd" firstAttribute="centerX" secondItem="Nab-vr-KYs" secondAttribute="centerX" id="72S-NJ-0NR"/>
+                                                <constraint firstItem="Azm-qi-uJC" firstAttribute="width" secondItem="Nab-vr-KYs" secondAttribute="width" id="CL0-2Q-qGs"/>
+                                                <constraint firstItem="Azm-qi-uJC" firstAttribute="width" secondItem="Nab-vr-KYs" secondAttribute="width" constant="-8" id="P4l-m5-nmX"/>
+                                                <constraint firstItem="m5Q-Sq-AR4" firstAttribute="top" secondItem="Ya4-3x-ciM" secondAttribute="bottom" constant="4" id="U5g-5Q-lAG"/>
+                                                <constraint firstItem="Azm-qi-uJC" firstAttribute="top" secondItem="Nab-vr-KYs" secondAttribute="top" id="b6O-r6-ERq"/>
+                                                <constraint firstItem="Azm-qi-uJC" firstAttribute="leading" secondItem="Nab-vr-KYs" secondAttribute="leadingMargin" constant="-8" id="cPF-v3-txa"/>
+                                                <constraint firstItem="iQA-wS-syd" firstAttribute="leading" secondItem="Nab-vr-KYs" secondAttribute="leadingMargin" constant="79" id="cZ0-e5-BHG"/>
+                                                <constraint firstItem="Ya4-3x-ciM" firstAttribute="top" secondItem="iQA-wS-syd" secondAttribute="bottom" constant="13" id="hET-sD-seQ"/>
+                                                <constraint firstItem="iQA-wS-syd" firstAttribute="top" secondItem="Nab-vr-KYs" secondAttribute="topMargin" constant="52" id="kp3-vD-Kmd"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="m5Q-Sq-AR4" secondAttribute="bottom" constant="0.5" id="oqp-Rp-gjY"/>
+                                                <constraint firstItem="iQA-wS-syd" firstAttribute="centerX" secondItem="Nab-vr-KYs" secondAttribute="centerX" constant="-4.5" id="q4P-1y-Suv"/>
+                                                <constraint firstItem="Azm-qi-uJC" firstAttribute="centerY" secondItem="iQA-wS-syd" secondAttribute="centerY" id="rEx-D1-hd6"/>
+                                                <constraint firstItem="Ya4-3x-ciM" firstAttribute="centerX" secondItem="iQA-wS-syd" secondAttribute="centerX" id="wtu-VB-BCX"/>
+                                                <constraint firstItem="Ya4-3x-ciM" firstAttribute="centerX" secondItem="m5Q-Sq-AR4" secondAttribute="centerX" id="ylg-0K-LfV"/>
+                                            </constraints>
+                                            <variation key="default">
+                                                <mask key="constraints">
+                                                    <exclude reference="P4l-m5-nmX"/>
+                                                    <exclude reference="q4P-1y-Suv"/>
+                                                    <exclude reference="1TH-W3-FrQ"/>
+                                                </mask>
+                                            </variation>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="videoScreenshot" destination="Azm-qi-uJC" id="esr-Pg-meJ"/>
+                                            <outlet property="videoSourceLabel" destination="m5Q-Sq-AR4" id="Rsq-nS-6Zv"/>
+                                            <outlet property="videoTitleLabel" destination="Ya4-3x-ciM" id="cFf-xA-SLm"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="trq-ru-Otf" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="-64" id="1Hm-ee-1Dd"/>
+                            <constraint firstItem="trq-ru-Otf" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="Pad-Xp-oDU"/>
+                            <constraint firstItem="trq-ru-Otf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="x6d-Rk-Ivu"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="trq-ru-Otf" secondAttribute="trailing" constant="-20" id="xGL-XB-xj7"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Watch Later" id="BM6-FU-H0T"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="tableView" destination="trq-ru-Otf" id="gS2-hg-To3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="852.5" y="-331.5"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="nry-Vd-Db7">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Q5i-Hh-GP4" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="9SO-kA-BcV">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="kqm-X7-80i"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aSl-4V-QHO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="146" y="-331"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="playBtn" width="60" height="60"/>
+        <image name="videoScreenshot01" width="375" height="220"/>
+    </resources>
+</document>
