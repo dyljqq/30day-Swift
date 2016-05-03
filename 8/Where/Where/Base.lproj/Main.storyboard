@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1509" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Where" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="iHp-7j-3Yn" userLabel="bg">
+                                <rect key="frame" x="-4" y="0.0" width="383" height="667"/>
+                            </imageView>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sPg-eT-Ux1">
+                                <rect key="frame" x="-4" y="0.0" width="383" height="667"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="sOj-Wj-taL">
+                                    <rect key="frame" x="0.0" y="0.0" width="383" height="667"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Find my location" translatesAutoresizingMaskIntoConstraints="NO" id="HP1-4u-VcR" userLabel="Find My Location">
+                                            <rect key="frame" x="24" y="581" width="326" height="78"/>
+                                        </imageView>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LTL-xj-Ieh">
+                                            <rect key="frame" x="24" y="578" width="326" height="78"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="78" id="Ss5-lF-IsI"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="14"/>
+                                            <state key="normal" title="Find my location">
+                                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="MyLocationButtonDidTouch:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Z3G-r6-3gJ"/>
+                                            </connections>
+                                        </button>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D56-4G-nUJ">
+                                            <rect key="frame" x="24" y="45" width="326" height="90"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="My Location" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E6z-7y-FOz" userLabel="Location Label">
+                                                    <rect key="frame" x="0.0" y="0.0" width="326" height="90"/>
+                                                    <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="20"/>
+                                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </view>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="D56-4G-nUJ" firstAttribute="leading" secondItem="sOj-Wj-taL" secondAttribute="leading" constant="24" id="1gl-XQ-TRv"/>
+                                        <constraint firstAttribute="bottom" secondItem="LTL-xj-Ieh" secondAttribute="bottom" constant="11" id="3el-J1-8RG"/>
+                                        <constraint firstAttribute="trailing" secondItem="D56-4G-nUJ" secondAttribute="trailing" constant="33" id="5QK-df-zOb"/>
+                                        <constraint firstItem="D56-4G-nUJ" firstAttribute="top" secondItem="sOj-Wj-taL" secondAttribute="top" constant="45" id="K2n-ac-PWR"/>
+                                        <constraint firstItem="LTL-xj-Ieh" firstAttribute="trailing" secondItem="HP1-4u-VcR" secondAttribute="trailing" id="LR4-LN-Tt5"/>
+                                        <constraint firstAttribute="trailing" secondItem="HP1-4u-VcR" secondAttribute="trailing" constant="33" id="gbm-qA-Qyl"/>
+                                        <constraint firstItem="LTL-xj-Ieh" firstAttribute="leading" secondItem="HP1-4u-VcR" secondAttribute="leading" id="hbc-bn-Wol"/>
+                                        <constraint firstItem="HP1-4u-VcR" firstAttribute="leading" secondItem="sOj-Wj-taL" secondAttribute="leading" constant="24" id="iO0-DF-blg"/>
+                                        <constraint firstAttribute="bottom" secondItem="HP1-4u-VcR" secondAttribute="bottom" constant="8" id="mcv-Lx-2mr"/>
+                                        <constraint firstAttribute="bottom" secondItem="D56-4G-nUJ" secondAttribute="bottom" constant="532" id="y1D-7P-POU"/>
+                                    </constraints>
+                                </view>
+                                <blurEffect style="dark"/>
+                            </visualEffectView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="sPg-eT-Ux1" secondAttribute="bottom" id="42i-57-n2c"/>
+                            <constraint firstItem="iHp-7j-3Yn" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="E5f-JK-EuA"/>
+                            <constraint firstItem="iHp-7j-3Yn" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="-20" id="LA8-PM-Zoz"/>
+                            <constraint firstItem="sPg-eT-Ux1" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="T6q-Da-0As"/>
+                            <constraint firstItem="sPg-eT-Ux1" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="-20" id="aDQ-DE-vNB"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="iHp-7j-3Yn" secondAttribute="bottom" id="aKE-Ve-hSo"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="iHp-7j-3Yn" secondAttribute="trailing" constant="-20" id="dl3-i4-8r5"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="sPg-eT-Ux1" secondAttribute="trailing" constant="-20" id="fJP-vP-VER"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="locationLabel" destination="E6z-7y-FOz" id="Ayh-2G-shF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="304.5" y="363.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Find my location" width="326" height="78"/>
+        <image name="bg" width="375" height="667"/>
+    </resources>
+</document>

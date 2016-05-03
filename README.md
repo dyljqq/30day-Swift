@@ -7,3 +7,4 @@
 5. StopWatch是模仿另一个30天学习swift的第一天的项目，但是根据自己的情况做了一些修改
 6. Custom Font(注：字体导入时时通过plist文件)
 7. PlayLocalVedio(修改了原作者的UItableViewCell的button点击，封装性更强)
+8. Where(实现定位)
