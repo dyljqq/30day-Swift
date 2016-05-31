@@ -86,7 +86,7 @@ import UIKit
                     size: CGSize(width: 5.0, height: 5.0)))
             circle.fill()
         }
-        
+
         //Draw horizontal graph lines on the top of everything
         var linePath = UIBezierPath()
         
