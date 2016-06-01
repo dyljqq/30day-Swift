@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1509" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="T5g-Zw-7ju">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="HitList" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Y86-Mu-Aex">
+                                <rect key="frame" x="-8" y="64" width="391" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="631" id="Jbr-xR-pCP"/>
+                                    <constraint firstAttribute="width" constant="375" id="UA9-eL-Xjy"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Jbr-xR-pCP"/>
+                                        <exclude reference="UA9-eL-Xjy"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="q0F-bw-WM2"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="xLN-K7-Bc1"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Y86-Mu-Aex" secondAttribute="bottom" constant="36" id="KKC-nR-Bel"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Y86-Mu-Aex" secondAttribute="trailing" constant="-24" id="dP3-9T-lqH"/>
+                            <constraint firstItem="Y86-Mu-Aex" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-24" id="kkY-jg-nzt"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Y86-Mu-Aex" secondAttribute="bottom" id="lIT-Tl-jQg"/>
+                            <constraint firstItem="Y86-Mu-Aex" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="mK9-KX-Ccb"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="KKC-nR-Bel"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" id="Eyc-Fl-cWr">
+                        <barButtonItem key="rightBarButtonItem" title="Add" id="7jH-Oc-gaK">
+                            <connections>
+                                <action selector="addName:" destination="BYZ-38-t0r" id="7HH-wy-ImN"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="tableView" destination="Y86-Mu-Aex" id="gIx-CT-85W"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1116.5" y="364.5"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Azi-cp-Wl9">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="T5g-Zw-7ju" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="L14-xO-lLQ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="m3D-iD-vLj"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ghe-eb-2dI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="435" y="1058"/>
+        </scene>
+    </scenes>
+</document>
