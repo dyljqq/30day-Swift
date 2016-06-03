@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1509" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="BowTie" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="dOs-GP-9Qc">
+                                <rect key="frame" x="31" y="30" width="313" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="28" id="R3I-Ri-tla"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="R"/>
+                                    <segment title="O"/>
+                                    <segment title="Y"/>
+                                    <segment title="G"/>
+                                    <segment title="B"/>
+                                    <segment title="I"/>
+                                    <segment title="V"/>
+                                </segments>
+                                <connections>
+                                    <action selector="segmentedControl:" destination="BYZ-38-t0r" eventType="valueChanged" id="jnY-bG-GYv"/>
+                                </connections>
+                            </segmentedControl>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rEQ-NU-1wy">
+                                <rect key="frame" x="31" y="73" width="313" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="vgn-IL-PL2"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2uy-lA-9sh" userLabel="name">
+                                <rect key="frame" x="31" y="226" width="45" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rating" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k7z-9K-b2S" userLabel="rate">
+                                <rect key="frame" x="31" y="255" width="49" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="# of times worn:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="14m-dZ-tVn" userLabel="times">
+                                <rect key="frame" x="31" y="283" width="124" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Last worn:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8P9-KW-ww1" userLabel="worn">
+                                <rect key="frame" x="31" y="312" width="80" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Favorate" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hvk-yx-gsq" userLabel="favorate">
+                                <rect key="frame" x="31" y="340" width="66" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.95294117649999999" green="0.61176470589999998" blue="0.070588235289999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7xe-nr-AQ1" userLabel="Rate">
+                                <rect key="frame" x="292" y="617" width="60" height="30"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="9XJ-Nd-h8f"/>
+                                    <constraint firstAttribute="width" constant="60" id="mf1-bw-lWd"/>
+                                </constraints>
+                                <state key="normal" title="Rate"/>
+                                <connections>
+                                    <action selector="rate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aWP-7D-WFh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xPW-yU-sPd" userLabel="Wear">
+                                <rect key="frame" x="31" y="617" width="60" height="30"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="elf-xc-xZm"/>
+                                    <constraint firstAttribute="width" constant="60" id="giB-F6-5NE"/>
+                                </constraints>
+                                <state key="normal" title="Wear"/>
+                                <connections>
+                                    <action selector="wear:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hYQ-YW-aED"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="hvk-yx-gsq" firstAttribute="leading" secondItem="14m-dZ-tVn" secondAttribute="leading" id="4L8-NJ-VRm"/>
+                            <constraint firstItem="rEQ-NU-1wy" firstAttribute="trailing" secondItem="dOs-GP-9Qc" secondAttribute="trailing" id="8TG-7y-7Cr"/>
+                            <constraint firstItem="dOs-GP-9Qc" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="10" id="CRX-85-oi9"/>
+                            <constraint firstItem="2uy-lA-9sh" firstAttribute="top" secondItem="rEQ-NU-1wy" secondAttribute="bottom" constant="25" id="V66-d8-edW"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="7xe-nr-AQ1" secondAttribute="bottom" constant="20" id="VON-OC-Pqf"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="7xe-nr-AQ1" secondAttribute="trailing" constant="7" id="W7F-NW-YKV"/>
+                            <constraint firstItem="k7z-9K-b2S" firstAttribute="top" secondItem="2uy-lA-9sh" secondAttribute="bottom" constant="8" id="XoH-lT-XUn"/>
+                            <constraint firstItem="8P9-KW-ww1" firstAttribute="leading" secondItem="14m-dZ-tVn" secondAttribute="leading" id="d1y-0g-EzW"/>
+                            <constraint firstItem="2uy-lA-9sh" firstAttribute="leading" secondItem="rEQ-NU-1wy" secondAttribute="leading" id="ek3-kS-RZD"/>
+                            <constraint firstItem="rEQ-NU-1wy" firstAttribute="leading" secondItem="dOs-GP-9Qc" secondAttribute="leading" id="h0R-d0-VeT"/>
+                            <constraint firstItem="8P9-KW-ww1" firstAttribute="top" secondItem="14m-dZ-tVn" secondAttribute="bottom" constant="8" id="hYX-xe-MSf"/>
+                            <constraint firstItem="hvk-yx-gsq" firstAttribute="top" secondItem="8P9-KW-ww1" secondAttribute="bottom" constant="8" id="itG-qT-vtc"/>
+                            <constraint firstItem="rEQ-NU-1wy" firstAttribute="width" secondItem="dOs-GP-9Qc" secondAttribute="width" id="lRf-qh-WrW"/>
+                            <constraint firstItem="dOs-GP-9Qc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="15" id="m5Q-lJ-y4t"/>
+                            <constraint firstItem="hvk-yx-gsq" firstAttribute="top" secondItem="14m-dZ-tVn" secondAttribute="bottom" constant="8" id="m60-zw-qt3"/>
+                            <constraint firstItem="14m-dZ-tVn" firstAttribute="top" secondItem="k7z-9K-b2S" secondAttribute="bottom" constant="8" id="nbH-mq-ZJk"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="dOs-GP-9Qc" secondAttribute="trailing" constant="15" id="o0e-wg-tyd"/>
+                            <constraint firstItem="14m-dZ-tVn" firstAttribute="leading" secondItem="k7z-9K-b2S" secondAttribute="leading" id="thm-K7-vC4"/>
+                            <constraint firstItem="hvk-yx-gsq" firstAttribute="leading" secondItem="8P9-KW-ww1" secondAttribute="leading" id="uvu-zu-ADG"/>
+                            <constraint firstItem="k7z-9K-b2S" firstAttribute="leading" secondItem="2uy-lA-9sh" secondAttribute="leading" id="vg9-nu-Wbu"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="xPW-yU-sPd" secondAttribute="bottom" constant="20" id="xDf-qu-QVV"/>
+                            <constraint firstItem="xPW-yU-sPd" firstAttribute="leading" secondItem="hvk-yx-gsq" secondAttribute="leading" id="zUX-Z2-eoX"/>
+                            <constraint firstItem="rEQ-NU-1wy" firstAttribute="top" secondItem="dOs-GP-9Qc" secondAttribute="bottom" constant="15" id="zmT-7k-Ndc"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="4L8-NJ-VRm"/>
+                                <exclude reference="m60-zw-qt3"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="favorateLabel" destination="hvk-yx-gsq" id="fTY-g9-D6S"/>
+                        <outlet property="imageView" destination="rEQ-NU-1wy" id="Bl2-6w-Fym"/>
+                        <outlet property="lastWornLabel" destination="8P9-KW-ww1" id="vB1-99-cIN"/>
+                        <outlet property="nameLabel" destination="2uy-lA-9sh" id="cBL-oV-5Nv"/>
+                        <outlet property="ratingLabel" destination="k7z-9K-b2S" id="nRf-Wp-ak4"/>
+                        <outlet property="segmentControl" destination="dOs-GP-9Qc" id="SF5-lZ-UmS"/>
+                        <outlet property="timesWornLabel" destination="14m-dZ-tVn" id="PVW-JZ-lAO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="325.5" y="403.5"/>
+        </scene>
+    </scenes>
+</document>

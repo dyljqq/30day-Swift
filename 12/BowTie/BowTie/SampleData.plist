@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Item 0</key>
+	<dict>
+		<key>tintColor</key>
+		<dict>
+			<key>blue</key>
+			<integer>0</integer>
+			<key>green</key>
+			<integer>255</integer>
+			<key>red</key>
+			<integer>0</integer>
+		</dict>
+		<key>imageName</key>
+		<string>red.png</string>
+		<key>lastWorn</key>
+		<date>2016-06-01T10:01:34Z</date>
+		<key>timesWorn</key>
+		<integer>4</integer>
+		<key>rating</key>
+		<real>3.5</real>
+		<key>isFavorate</key>
+		<false/>
+		<key>searchKey</key>
+		<string>R</string>
+		<key>name</key>
+		<string>Red Bow Tie</string>
+	</dict>
+	<key>Item 1</key>
+	<dict>
+        <key>tintColor</key>
+        <dict>
+            <key>blue</key>
+            <integer>0</integer>
+            <key>green</key>
+            <integer>255</integer>
+            <key>red</key>
+            <integer>0</integer>
+        </dict>
+		<key>imageName</key>
+		<string>orange.png</string>
+		<key>lastWorn</key>
+		<date>2016-06-01T10:01:34Z</date>
+		<key>timesWorn</key>
+		<integer>2</integer>
+		<key>rating</key>
+		<real>3.5</real>
+		<key>isFavorate</key>
+		<false/>
+		<key>searchKey</key>
+		<string>O</string>
+		<key>name</key>
+		<string>Orange Bow Tie</string>
+	</dict>
+	<key>Item 2</key>
+	<dict>
+        <key>tintColor</key>
+        <dict>
+            <key>blue</key>
+            <integer>0</integer>
+            <key>green</key>
+            <integer>255</integer>
+            <key>red</key>
+            <integer>0</integer>
+        </dict>
+		<key>imageName</key>
+		<string>yellow.png</string>
+		<key>lastWorn</key>
+		<date>2016-06-01T10:01:34Z</date>
+		<key>timesWorn</key>
+		<integer>3</integer>
+		<key>rating</key>
+		<real>3.5</real>
+		<key>isFavorate</key>
+		<true/>
+		<key>searchKey</key>
+		<string>Y</string>
+		<key>name</key>
+		<string>Yellow Bow Tie</string>
+	</dict>
+	<key>Item 3</key>
+	<dict>
+        <key>tintColor</key>
+        <dict>
+            <key>blue</key>
+            <integer>0</integer>
+            <key>green</key>
+            <integer>255</integer>
+            <key>red</key>
+            <integer>0</integer>
+        </dict>
+		<key>imageName</key>
+		<string>green.png</string>
+		<key>lastWorn</key>
+		<date>2016-06-01T10:01:34Z</date>
+		<key>timesWorn</key>
+		<integer>4</integer>
+		<key>rating</key>
+		<real>3.5</real>
+		<key>isFavorate</key>
+		<false/>
+		<key>searchKey</key>
+		<string>G</string>
+		<key>name</key>
+		<string>Green Bow Tie</string>
+	</dict>
+	<key>Item 4</key>
+	<dict>
+        <key>tintColor</key>
+        <dict>
+            <key>blue</key>
+            <integer>0</integer>
+            <key>green</key>
+            <integer>255</integer>
+            <key>red</key>
+            <integer>0</integer>
+        </dict>
+		<key>imageName</key>
+		<string>blue.png</string>
+		<key>lastWorn</key>
+		<date>2016-06-01T10:01:34Z</date>
+		<key>timesWorn</key>
+		<integer>4</integer>
+		<key>rating</key>
+		<real>3.5</real>
+		<key>isFavorate</key>
+		<false/>
+		<key>searchKey</key>
+		<string>B</string>
+		<key>name</key>
+		<string>Blue Bow Tie</string>
+	</dict>
+	<key>Item 5</key>
+	<dict>
+        <key>tintColor</key>
+        <dict>
+            <key>blue</key>
+            <integer>0</integer>
+            <key>green</key>
+            <integer>255</integer>
+            <key>red</key>
+            <integer>0</integer>
+        </dict>
+		<key>imageName</key>
+		<string>ivory.png</string>
+		<key>lastWorn</key>
+		<date>2016-06-01T10:01:34Z</date>
+		<key>timesWorn</key>
+		<integer>4</integer>
+		<key>rating</key>
+		<real>3.5</real>
+		<key>isFavorate</key>
+		<false/>
+		<key>searchKey</key>
+		<string>I</string>
+		<key>name</key>
+		<string>Ivory Bow Tie</string>
+	</dict>
+	<key>Item 6</key>
+	<dict>
+        <key>tintColor</key>
+        <dict>
+            <key>blue</key>
+            <integer>0</integer>
+            <key>green</key>
+            <integer>255</integer>
+            <key>red</key>
+            <integer>0</integer>
+        </dict>
+		<key>imageName</key>
+		<string>viridian.png</string>
+		<key>lastWorn</key>
+		<date>2016-06-01T10:01:34Z</date>
+		<key>timesWorn</key>
+		<integer>4</integer>
+		<key>rating</key>
+		<real>3.5</real>
+		<key>isFavorate</key>
+		<false/>
+		<key>searchKey</key>
+		<string>V</string>
+		<key>name</key>
+		<string>Viridian Bow Tie</string>
+	</dict>
+</dict>
+</plist>

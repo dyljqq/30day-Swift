@@ -8,3 +8,8 @@
 6. Custom Font(注：字体导入时时通过plist文件)
 7. PlayLocalVedio(修改了原作者的UItableViewCell的button点击，封装性更强)
 8. Where(实现定位)
+9. RandomColorization(音乐播放的同时改变颜色)
+10. EasyShare (分享到Facebook，twitter等)
+11. HitList (Core Data), LoginAnimateSwift(登录的一个小动画)
+12. Core Data
+13. AnimateTable(cell以动画的形式飞入，简化了原作者的工程)
