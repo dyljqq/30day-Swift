@@ -13,3 +13,4 @@
 11. HitList (Core Data), LoginAnimateSwift(登录的一个小动画)
 12. Core Data
 13. AnimateTable(cell以动画的形式飞入，简化了原作者的工程)
+14. EmojiMachine (UIPickerView)
