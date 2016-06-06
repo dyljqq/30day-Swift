@@ -80,6 +80,7 @@ class NewsTableViewController: UITableViewController, MenuTransitionManagerDeleg
         menuTransitionManager.delegate = self
     }
     
+    //写一个@IBAction的方法，然后右键Exit，弹出这个方法，和需要的部分连接
     @IBAction func unwindToHome(segue: UIStoryboardSegue) {
         let sourceController = segue.sourceViewController as! MenuTableViewController
         self.title = sourceController.currentItem
