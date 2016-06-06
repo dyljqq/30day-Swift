@@ -15,3 +15,4 @@
 13. AnimateTable(cell以动画的形式飞入，简化了原作者的工程)
 14. EmojiMachine (UIPickerView)
 15. Animation Splash(模仿twitter的载入界面)
+16. SlideMenu(通过转场的方式实现菜单从上到下展示的效果)
