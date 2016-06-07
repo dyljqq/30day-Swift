@@ -16,3 +16,4 @@
 14. EmojiMachine (UIPickerView)
 15. Animation Splash(模仿twitter的载入界面)
 16. SlideMenu(通过转场的方式实现菜单从上到下展示的效果)
+17. TumblrMenu(转场实现菜单按钮的显示， 具体效果看工程)
