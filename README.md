@@ -18,3 +18,5 @@
 16. SlideMenu(通过转场的方式实现菜单从上到下展示的效果)
 17. TumblrMenu(转场实现菜单按钮的显示， 具体效果看工程)
 18. LimitCharactor(键盘呼出时，键盘上方的工具随键盘的出现和隐藏动态的调整高度)
+19. PullRefresh(将RefreshView剥离出来，能更好的复用，而且个人感觉原作者的代码重复度太高,所以重写的地方很多，欢迎批评指正)
+20. CollectionViewAnimation(就是单击某个cell，该cell会扩大到整个屏幕)
