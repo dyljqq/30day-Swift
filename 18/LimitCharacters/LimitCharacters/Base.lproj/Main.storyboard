@@ -63,7 +63,7 @@
                                         <state key="normal" image="GPS"/>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="140" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F6c-6N-1MS">
-                                        <rect key="frame" x="337.5" y="14" width="30.5" height="21.5"/>
+                                        <rect key="frame" x="338" y="14" width="31" height="22"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                         <color key="textColor" red="0.33495616909999998" green="0.39237439629999998" blue="0.96349853279999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
