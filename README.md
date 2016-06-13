@@ -22,3 +22,4 @@
 20. CollectionViewAnimation(就是单击某个cell，该cell会扩大到整个屏幕)
 21. SwipeableCell(自定义滑动UITableViewCell时的模块，这里加入了delete, share, download功能)
 22. MosaicCell(滑动时产生渐隐渐现的cell)
+23. UICollectionView的石工布局（瀑布流）[原文地址](https://www.raywenderlich.com/107439/uicollectionview-custom-layout-tutorial-pinterest)
