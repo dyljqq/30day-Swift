@@ -59,6 +59,35 @@ class ViewController: UICollectionViewController {
         return PhotoManager.sharedManaged().photos().count
     }
     
+    override func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
+        collectionView.deselectItemAtIndexPath(indexPath, animated: true)
+        let photo = PhotoManager.sharedManaged().photos()[indexPath.row]
+        struct Message {
+            var message: String?
+            var title: String?
+        }
+        var message = Message()
+        switch photo.status! {
+        case .Downloading:
+            message.message = "The image is currently downloading"
+            message.title = "Downloading"
+            break
+        case .Failed:
+            message.message = "The image failed to be created"
+            message.title = "Image Failed"
+            break
+        case .GoodToGo:
+            //TODO
+            return
+        }
+        let alertController = UIAlertController(title: message.title, message: message.message, preferredStyle: .Alert)
+        let cancelAction = UIAlertAction(title: "OK", style: .Default, handler: { action in
+            self.dismissViewControllerAnimated(true, completion: nil)
+        })
+        alertController.addAction(cancelAction)
+        self.presentViewController(alertController, animated: true, completion: nil)
+    }
+    
     //MARK: - Notification
     
     func contentChangedNotification(notification: NSNotification) {
@@ -88,7 +117,7 @@ class ViewController: UICollectionViewController {
             if count == 0 {
                 self.navigationItem.prompt = "Add photos with faces to Googlyify them!"
             }else{
-                self.navigationItem.prompt = ""
+                self.navigationItem.prompt = nil
             }
         })
     }
