@@ -27,3 +27,4 @@
 25. GooglyPuff(swift版)
 26. TabbarApp
 27. Calculate(计算器)
+28. WikiFace(从维基百科获取任务图片)
