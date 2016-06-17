@@ -26,3 +26,4 @@
 24. BasicAnimation
 25. GooglyPuff(swift版)
 26. TabbarApp
+27. Calculate(计算器)
