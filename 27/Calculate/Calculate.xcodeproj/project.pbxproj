@@ -12,6 +12,7 @@
 		730FB7601D12ACD4006C98B2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 730FB75E1D12ACD4006C98B2 /* Main.storyboard */; };
 		730FB7621D12ACD4006C98B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 730FB7611D12ACD4006C98B2 /* Assets.xcassets */; };
 		730FB7651D12ACD4006C98B2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 730FB7631D12ACD4006C98B2 /* LaunchScreen.storyboard */; };
+		730FB78D1D17836B006C98B2 /* CalculateModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 730FB78C1D17836B006C98B2 /* CalculateModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		730FB7611D12ACD4006C98B2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		730FB7641D12ACD4006C98B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		730FB7661D12ACD4006C98B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		730FB78C1D17836B006C98B2 /* CalculateModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculateModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			children = (
 				730FB75A1D12ACD4006C98B2 /* AppDelegate.swift */,
 				730FB75C1D12ACD4006C98B2 /* ViewController.swift */,
+				730FB78C1D17836B006C98B2 /* CalculateModel.swift */,
 				730FB75E1D12ACD4006C98B2 /* Main.storyboard */,
 				730FB7611D12ACD4006C98B2 /* Assets.xcassets */,
 				730FB7631D12ACD4006C98B2 /* LaunchScreen.storyboard */,
@@ -136,6 +139,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				730FB75D1D12ACD4006C98B2 /* ViewController.swift in Sources */,
+				730FB78D1D17836B006C98B2 /* CalculateModel.swift in Sources */,
 				730FB75B1D12ACD4006C98B2 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -284,6 +288,7 @@
 				730FB76B1D12ACD4006C98B2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

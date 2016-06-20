@@ -22,6 +22,7 @@ class ViewController: UIViewController {
     var operate = ""
     var isOperate = true
     var sum = 0.0
+    let brain = CalculateModel()
     
     var displayValue: Double {
         get {
@@ -38,6 +39,9 @@ class ViewController: UIViewController {
         let value = Double(num)!
         sum = sum * 10 + value
         displayValue = sum
+        
+        brain.pushOperand(sum)
+        
         isOperate = false
     }
     
@@ -45,6 +49,7 @@ class ViewController: UIViewController {
         
         if isOperate {
             operate = sender.currentTitle!
+            brain.performOPeration(operate)
             print("A little more tapped operate button...")
             print("Current Operate: \(operate)")
             return
@@ -54,52 +59,56 @@ class ViewController: UIViewController {
         nums.append(sum)
         sum = 0.0
         
-        switch operate {
-        case "+":
-            performOperate { $0 + $1 }
-            break
-            
-        case "−":
-            performOperate { $0 - $1 }
-            break
-            
-        case "×":
-            performOperate { $0 * $1 }
-            break
-            
-        case "÷":
-            performOperate { $1 / $0 }
-            break
-            
-        case "√":
-            performOperate { sqrt($0) }
-            break
-            
-        case "=":
-            performOperate { $0 }
-            break
-            
-        default:
-            break
+//        switch operate {
+//        case "+":
+//            performOperate { $0 + $1 }
+//            break
+//            
+//        case "−":
+//            performOperate { $0 - $1 }
+//            break
+//            
+//        case "×":
+//            performOperate { $0 * $1 }
+//            break
+//            
+//        case "÷":
+//            performOperate { $1 / $0 }
+//            break
+//            
+//        case "√":
+//            performOperate { sqrt($0) }
+//            break
+//            
+//        case "=":
+//            performOperate { $0 }
+//            break
+//            
+//        default:
+//            break
+//        }
+//        print("\(nums)")
+        if let result = brain.evaluate() {
+            displayValue = result
         }
-        print("\(nums)")
         
         operate = sender.currentTitle!
+        brain.performOPeration(operate)
     }
     
-    func performOperate(operation: (Double, Double) -> (Double)) {
-        if  nums.count >= 2 {
-            displayValue = operation(nums.removeLast(), nums.removeLast())
-            nums.append(displayValue)
-        }
-    }
-    
-    private func performOperate(operation: Double -> Double) {
-        if  nums.count >= 1 {
-            displayValue = operation(nums.removeLast())
-            nums.append(displayValue)
-        }
-    }
+//    func performOperate(operation: (Double, Double) -> (Double)) {
+//        if  nums.count >= 2 {
+//            displayValue = operation(nums.removeLast(), nums.removeLast())
+//            nums.append(displayValue)
+//        }
+//    }
+//    
+//    private func performOperate(operation: Double -> Double) {
+//        if  nums.count >= 1 {
+//            displayValue = operation(nums.removeLast())
+//            nums.append(displayValue)
+//        }
+//    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
