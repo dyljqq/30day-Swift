@@ -6,7 +6,7 @@
 4. [iOS Animation Tutorial: Custom View Controller Presentation Transitions](https://www.raywenderlich.com/113845/ios-animation-tutorial-custom-view-controller-presentation-transitions)
 5. StopWatch是模仿另一个30天学习swift的第一天的项目，但是根据自己的情况做了一些修改
 6. Custom Font(注：字体导入时时通过plist文件)
-7. PlayLocalVedio(修改了原作者的UItableViewCell的button点击，封装性更强)
+7. PlayLocalVedio(修改了原作者的UITableViewCell的button点击，封装性更强)
 8. Where(实现定位)
 9. RandomColorization(音乐播放的同时改变颜色)
 10. EasyShare (分享到Facebook，twitter等)
@@ -28,3 +28,4 @@
 26. TabbarApp
 27. Calculate(计算器)
 28. WikiFace(从维基百科获取任务图片)
+29. functional swift
